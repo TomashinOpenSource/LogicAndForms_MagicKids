@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
     public List<GameObject> effectsFormsList = new List<GameObject>(6);
     public List<GameObject> effectsBridgeList = new List<GameObject>(6);
     public List<Sprite> variantsSpriteList = new List<Sprite>(formsCount);
-    public List<Image> variantsButtons = new List<Image>(3);
+    public List<GameObject> variantsButtons = new List<GameObject>(3);
+    int indexTrueVariant;
 
 
     void Start()
@@ -25,10 +26,10 @@ public class GameManager : MonoBehaviour
         VariantsZone.gameObject.SetActive(false);
     }
 
-    
+
     void Update()
     {
-        
+
     }
 
     public void NextButtonPressed()
@@ -62,13 +63,16 @@ public class GameManager : MonoBehaviour
 
     void BridgeAppear(int index)
     {
+
         slider.value = index;
         if (EffectsBridgeHolder.childCount > 0) foreach (Transform child in EffectsBridgeHolder) Destroy(child.gameObject);
+        for (int i = 0; i < Bridge.Find("bridge2").childCount; i++)
+            Bridge.Find("bridge2").GetChild(i).gameObject.SetActive(false);
         Bridge.gameObject.SetActive(true);
         VariantsZone.gameObject.SetActive(true);
         GameObject Effect = Instantiate(effectsBridgeList[Random.Range(0, effectsBridgeList.Count)], EffectsBridgeHolder);
         List<int> variantsList = new List<int>(3) { -1, -1, -1 }; // Индексы форм по кнопкам
-        int indexTrueVariant = Random.Range(0, variantsList.Count); // Выбор кнопки с верным ответом
+        indexTrueVariant = Random.Range(0, variantsList.Count); // Выбор кнопки с верным ответом
         variantsList[indexTrueVariant] = index; // Назначение верной кнопки индекса верного спрайта
         Debug.Log("Верный номер спрайта = " + index + " по индексу = " + indexTrueVariant);
         for (int i = 0; i < variantsList.Count; i++)
@@ -88,25 +92,40 @@ public class GameManager : MonoBehaviour
         {
             //Sprite _sprite = variantsButtons[i].GetComponent<Image>().sprite;
             if (i == indexTrueVariant)
-                variantsButtons[i].sprite = variantsSpriteList[index];
+                variantsButtons[i].GetComponent<Image>().sprite = variantsSpriteList[index];
             else
             {
-                variantsButtons[i].sprite = variantsSpriteList[variantsList[i]];
+                variantsButtons[i].GetComponent<Image>().sprite = variantsSpriteList[variantsList[i]];
             }
-
-            /*
-            if (i == indexTrueVariant)
-                _sprite = variantsSpriteList[index];
-            else
-            {
-                _sprite = variantsSpriteList[variantsList[i]];
-            }
-            */
         }
+        Bridge.Find("bridge2").GetChild(index).gameObject.SetActive(true);
     }
 
     public void AnswerButtonPressed(int index)
     {
+        if (index == indexTrueVariant)
+        {
+            Debug.Log("true");
+            variantsButtons[index].GetComponent<Image>().color = Color.green;
+            slider.value += slider.maxValue / formsCount;
+            StartCoroutine(MoveNext());
+        }
+        else
+        {
+            Debug.Log("false");
+            variantsButtons[index].GetComponent<Image>().color = Color.red;
+        }
+    }
 
+    IEnumerator MoveNext()
+    {
+        foreach (var i in variantsButtons) i.GetComponent<Button>().interactable = false;
+        yield return new WaitForSeconds(2);
+        BridgeAppear((int)slider.value);
+        foreach (var i in variantsButtons)
+        {
+            i.GetComponent<Button>().interactable = true;
+            i.GetComponent<Image>().color = Color.white;
+        }
     }
 }

@@ -799,6 +799,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3110658357617458304, guid: 7eb7f8760c641f943881141bb63a7c29,
+        type: 3}
+      propertyPath: m_Name
+      value: bridge5-ParallelogramMask
+      objectReference: {fileID: 0}
+    - target: {fileID: 3776383336326949973, guid: 7eb7f8760c641f943881141bb63a7c29,
+        type: 3}
+      propertyPath: m_Name
+      value: bridge1-OvalMask
+      objectReference: {fileID: 0}
+    - target: {fileID: 3776383336326949973, guid: 7eb7f8760c641f943881141bb63a7c29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3787050135777455112, guid: 7eb7f8760c641f943881141bb63a7c29,
         type: 3}
       propertyPath: m_Name
@@ -859,15 +874,55 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6245440677216362553, guid: 7eb7f8760c641f943881141bb63a7c29,
+        type: 3}
+      propertyPath: m_Name
+      value: bridge0-CircleMask
+      objectReference: {fileID: 0}
     - target: {fileID: 6841074531252442406, guid: 7eb7f8760c641f943881141bb63a7c29,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6841074531252442416, guid: 7eb7f8760c641f943881141bb63a7c29,
+        type: 3}
+      propertyPath: m_Name
+      value: bridge1-Oval
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841074531252442420, guid: 7eb7f8760c641f943881141bb63a7c29,
+        type: 3}
+      propertyPath: m_Name
+      value: bridge0-Circle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841074531252442424, guid: 7eb7f8760c641f943881141bb63a7c29,
+        type: 3}
+      propertyPath: m_Name
+      value: bridge8-Pentagon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841074531252442428, guid: 7eb7f8760c641f943881141bb63a7c29,
+        type: 3}
+      propertyPath: m_Name
+      value: bridge5-Parallelogram
+      objectReference: {fileID: 0}
     - target: {fileID: 6841074531252442432, guid: 7eb7f8760c641f943881141bb63a7c29,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841074531252442436, guid: 7eb7f8760c641f943881141bb63a7c29,
+        type: 3}
+      propertyPath: m_Name
+      value: bridge4-Rectangle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841074531252442436, guid: 7eb7f8760c641f943881141bb63a7c29,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833698565292313438, guid: 7eb7f8760c641f943881141bb63a7c29,
+        type: 3}
+      propertyPath: m_Name
+      value: bridge8-PentagonMask
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7eb7f8760c641f943881141bb63a7c29, type: 3}
@@ -957,7 +1012,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 780733387}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1354063534}
+        m_MethodName: AnswerButtonPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &780733387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1394,7 +1460,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1151667689}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1354063534}
+        m_MethodName: AnswerButtonPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1151667689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1761,9 +1838,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: dcf4865fd87fea6419f663d1c0347292, type: 3}
   - {fileID: 21300000, guid: 4207fc36570af234394e657152635978, type: 3}
   variantsButtons:
-  - {fileID: 2057813028}
-  - {fileID: 1151667689}
-  - {fileID: 780733387}
+  - {fileID: 2057813026}
+  - {fileID: 1151667686}
+  - {fileID: 780733384}
 --- !u!4 &1354063535
 Transform:
   m_ObjectHideFlags: 0
@@ -2146,7 +2223,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2057813028}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1354063534}
+        m_MethodName: AnswerButtonPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2125965439
 GameObject:
   m_ObjectHideFlags: 0
