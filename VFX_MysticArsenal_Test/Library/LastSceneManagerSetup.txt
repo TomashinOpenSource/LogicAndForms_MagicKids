@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/Mystic Arsenal/Demo/Scenes/MysticScene04.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
