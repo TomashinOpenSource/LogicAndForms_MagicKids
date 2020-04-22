@@ -63,7 +63,6 @@ public class GameManager : MonoBehaviour
 
     void BridgeAppear(int index)
     {
-
         slider.value = index;
         if (EffectsBridgeHolder.childCount > 0) foreach (Transform child in EffectsBridgeHolder) Destroy(child.gameObject);
         for (int i = 0; i < Bridge.Find("bridge2").childCount; i++)
@@ -107,6 +106,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("true");
             variantsButtons[index].GetComponent<Image>().color = Color.green;
+            Bridge.Find("bridge2").GetChild((int)slider.value + formsCount).gameObject.SetActive(true);
             slider.value += slider.maxValue / formsCount;
             StartCoroutine(MoveNext());
         }
@@ -120,12 +120,21 @@ public class GameManager : MonoBehaviour
     IEnumerator MoveNext()
     {
         foreach (var i in variantsButtons) i.GetComponent<Button>().interactable = false;
+        GameObject Effect = Instantiate(effectsFormsList[Random.Range(0, effectsFormsList.Count)], Bridge.Find("EffectsFormHolder"));
+        
         yield return new WaitForSeconds(2);
-        BridgeAppear((int)slider.value);
-        foreach (var i in variantsButtons)
+        if (slider.value >= slider.maxValue)
         {
-            i.GetComponent<Button>().interactable = true;
-            i.GetComponent<Image>().color = Color.white;
+            Debug.Log("FINISH");
+        }
+        else
+        {
+            BridgeAppear((int)slider.value);
+            foreach (var i in variantsButtons)
+            {
+                i.GetComponent<Button>().interactable = true;
+                i.GetComponent<Image>().color = Color.white;
+            }
         }
     }
 }
