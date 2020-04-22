@@ -419,24 +419,24 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
+      scrollPos: {x: 0, y: 180}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 70fbffff
+      m_ExpandedIDs: 92ebffff4aecffffdcf9ffff70fbfffff23e00001c3f0000463f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: bridgeRhombus
+        m_OriginalName: bridgeRhombus
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -5482
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -482,9 +482,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.52366537, y: 0.47492263, z: -0.4427797}
+    m_Target: {x: 0.0021914411, y: 0.264009, z: -0.007247597}
     speed: 2
-    m_Value: {x: 0.52366537, y: 0.47492263, z: -0.4427797}
+    m_Value: {x: 0.0021914833, y: 0.26400903, z: -0.0072476137}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -530,13 +530,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.18757755, y: 0.46842667, z: -0.1024941, w: -0.8572812}
+    m_Target: {x: -0.3083377, y: 0.50914115, z: -0.20183499, w: -0.77782625}
     speed: 2
-    m_Value: {x: -0.18757334, y: 0.46841618, z: -0.1024918, w: -0.857262}
+    m_Value: {x: -0.30716327, y: 0.5094311, z: -0.2010662, w: -0.77826923}
   m_Size:
-    m_Target: 0.06197667
+    m_Target: 0.840468
     speed: 2
-    m_Value: 0.06197667
+    m_Value: 0.540468
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -690,20 +690,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Bridge/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 87
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Bridge/Prefabs
   m_LastFoldersGridSize: 87
   m_LastProjectPath: C:\Unity Engine\UnityProjects\LogicAndForms_MagicKids_GitHub\LogicAndForms_MagicKids_UnityProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 174}
-    m_SelectedIDs: 3a390000
-    m_LastClickedID: 14650
-    m_ExpandedIDs: 00000000cc380000ce380000d0380000d2380000d4380000d6380000d8380000da380000dc38000000ca9a3b
+    scrollPos: {x: 0, y: 54}
+    m_SelectedIDs: 00390000
+    m_LastClickedID: 14592
+    m_ExpandedIDs: 00000000ca380000cc380000ce380000d0380000d2380000d4380000d6380000d8380000da380000f038000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -731,7 +731,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000cc380000ce380000d0380000d2380000d4380000d6380000d8380000da380000dc380000
+    m_ExpandedIDs: 00000000ca380000cc380000ce380000d0380000d2380000d4380000d6380000d8380000da380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
