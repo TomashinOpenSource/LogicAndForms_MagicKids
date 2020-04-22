@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class FormsManager : MonoBehaviour
 {
@@ -44,5 +45,8 @@ public class FormsManager : MonoBehaviour
         if (EffectHolder.childCount > 0) foreach (Transform child in EffectHolder) Destroy(child.gameObject);
         GameObject Form = Instantiate(formsArray[index], FormHolder);
         GameObject Effect = Instantiate(effectsArray[Random.Range(0, effectsArray.Length)], EffectHolder);
+        Vector3 localScale = Form.transform.localScale;
+        Form.transform.localScale = new Vector3(0, 0, 0);
+        Form.transform.DOScale(localScale, 1f).SetEase(Ease.OutBack);
     }
 }
