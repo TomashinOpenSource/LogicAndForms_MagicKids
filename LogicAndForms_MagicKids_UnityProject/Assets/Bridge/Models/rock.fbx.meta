@@ -1,0 +1,238 @@
+fileFormatVersion: 2
+guid: 0e376a5e3e3d41646a3da68b62ae4868
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: rock_1
+    100004: rock_10
+    100006: rock_11
+    100008: rock_12
+    100010: rock_13
+    100012: rock_14
+    100014: rock_15
+    100016: rock_16
+    100018: rock_17
+    100020: rock_18
+    100022: rock_19
+    100024: rock_2
+    100026: rock_20
+    100028: rock_21
+    100030: rock_22
+    100032: rock_23
+    100034: rock_3
+    100036: rock_4
+    100038: rock_4.001
+    100040: rock_5
+    100042: rock_6
+    100044: rock_7
+    100046: rock_8
+    100048: rock_9
+    100050: empty
+    100052: sphere.002
+    400000: //RootNode
+    400002: rock_1
+    400004: rock_10
+    400006: rock_11
+    400008: rock_12
+    400010: rock_13
+    400012: rock_14
+    400014: rock_15
+    400016: rock_16
+    400018: rock_17
+    400020: rock_18
+    400022: rock_19
+    400024: rock_2
+    400026: rock_20
+    400028: rock_21
+    400030: rock_22
+    400032: rock_23
+    400034: rock_3
+    400036: rock_4
+    400038: rock_4.001
+    400040: rock_5
+    400042: rock_6
+    400044: rock_7
+    400046: rock_8
+    400048: rock_9
+    400050: empty
+    400052: sphere.002
+    2300000: rock_1
+    2300002: rock_10
+    2300004: rock_11
+    2300006: rock_12
+    2300008: rock_13
+    2300010: rock_14
+    2300012: rock_15
+    2300014: rock_16
+    2300016: rock_17
+    2300018: rock_18
+    2300020: rock_19
+    2300022: rock_2
+    2300024: rock_20
+    2300026: rock_21
+    2300028: rock_22
+    2300030: rock_23
+    2300032: rock_3
+    2300034: rock_4
+    2300036: rock_4.001
+    2300038: rock_5
+    2300040: rock_6
+    2300042: rock_7
+    2300044: rock_8
+    2300046: rock_9
+    2300048: empty
+    2300050: sphere.002
+    3300000: rock_1
+    3300002: rock_10
+    3300004: rock_11
+    3300006: rock_12
+    3300008: rock_13
+    3300010: rock_14
+    3300012: rock_15
+    3300014: rock_16
+    3300016: rock_17
+    3300018: rock_18
+    3300020: rock_19
+    3300022: rock_2
+    3300024: rock_20
+    3300026: rock_21
+    3300028: rock_22
+    3300030: rock_23
+    3300032: rock_3
+    3300034: rock_4
+    3300036: rock_4.001
+    3300038: rock_5
+    3300040: rock_6
+    3300042: rock_7
+    3300044: rock_8
+    3300046: rock_9
+    3300048: empty
+    3300050: sphere.002
+    4300000: rock_7
+    4300002: rock_4.001
+    4300004: rock_23
+    4300006: rock_22
+    4300008: rock_21
+    4300010: rock_20
+    4300012: rock_19
+    4300014: rock_18
+    4300016: rock_17
+    4300018: rock_16
+    4300020: rock_15
+    4300022: rock_14
+    4300024: rock_13
+    4300026: rock_12
+    4300028: rock_11
+    4300030: rock_10
+    4300032: rock_9
+    4300034: rock_8
+    4300036: rock_6
+    4300038: rock_2
+    4300040: rock_5
+    4300042: rock_4
+    4300044: rock_3
+    4300046: rock_1
+    4300048: empty
+    4300050: sphere.002
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock
+    second: {fileID: 2100000, guid: 3666eb6cfe201304caae4a4e47bcc611, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood
+    second: {fileID: 2100000, guid: 3ab5ebdbc90496041a1ea145fee39201, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood.006
+    second: {fileID: 2100000, guid: e98c37c732031f64d95c73ab330f0710, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
